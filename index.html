@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      ;(() => {
+        const { pathname, search, hash } = window.location
+        const isDirectoryLikePath = !pathname.endsWith('/') && !pathname.split('/').pop()?.includes('.')
+        if (isDirectoryLikePath) {
+          window.location.replace(`${pathname}/${search}${hash}`)
+        }
+      })()
+    </script>
     <title>TECHDIM | Segurança cibernética e privacidade digital</title>
     <meta
       name="description"
@@ -16,8 +25,9 @@
       property="og:description"
       content="Análises locais de navegador, conexão, WebRTC, DNS e fingerprint com foco em transparência e privacidade."
     />
-    <meta property="og:url" content="https://www.techdim.com.br/" />
-    <meta property="og:image" content="https://www.techdim.com.br/og-image.svg" />
+    <meta property="og:url" content="https://techdimbr.github.io/techdim/" />
+    <meta property="og:image" content="https://techdimbr.github.io/techdim/og-image.svg" />
+    <link rel="canonical" href="https://techdimbr.github.io/techdim/" />
   </head>
   <body>
     <div id="root"></div>
