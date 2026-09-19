@@ -74,7 +74,7 @@ Referência oficial: https://docs.github.com/pages/configuring-a-custom-domain-f
 O projeto usa `base: './'` no Vite para manter compatibilidade com:
 
 - `https://www.techdim.com.br`
-- `https://techdimbr.github.io/techdim-site`
+- `https://techdimbr.github.io/techdim/`
 
 ## Roteamento no GitHub Pages
 
